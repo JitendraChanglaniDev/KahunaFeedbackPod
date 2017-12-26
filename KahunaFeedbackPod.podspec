@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KahunaFeedbackPod'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary           = 'This is pod that can be used for integrating feedback screen to your project.'
 
 # This description is used to generate tags and improve search results.
@@ -50,4 +50,4 @@ s.frameworks = 'UIKit'
 s.dependency 'MBProgressHUD', '~> 0.9.2'
 s.dependency 'ReachabilitySwift', '~> 3'
 s.dependency 'SDWebImage', '~>3.7'
-endxd
+end
