@@ -1,0 +1,6 @@
+framework module KahunaFeedbackPod {
+  umbrella header "KahunaFeedbackPod-umbrella.h"
+
+  export *
+  module * { export * }
+}

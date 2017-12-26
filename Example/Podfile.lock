@@ -1,0 +1,16 @@
+PODS:
+  - KahunaFeedbackPod (0.1.0)
+
+DEPENDENCIES:
+  - KahunaFeedbackPod (from `../`)
+
+EXTERNAL SOURCES:
+  KahunaFeedbackPod:
+    :path: ../
+
+SPEC CHECKSUMS:
+  KahunaFeedbackPod: d9431673da67e6e3728b6882cb0948193d012e31
+
+PODFILE CHECKSUM: 61911e20f701bc0c586753a781b673ca09629763
+
+COCOAPODS: 1.2.0

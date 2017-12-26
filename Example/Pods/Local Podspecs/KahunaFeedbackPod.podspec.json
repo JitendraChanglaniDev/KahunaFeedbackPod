@@ -1,0 +1,22 @@
+{
+  "name": "KahunaFeedbackPod",
+  "version": "0.1.0",
+  "summary": "A short description of KahunaFeedbackPod.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Jitendra Changlani/KahunaFeedbackPod",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Jitendra Changlani": "jitendrachanglani@yahoo.co.in"
+  },
+  "source": {
+    "git": "https://github.com/Jitendra Changlani/KahunaFeedbackPod.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "KahunaFeedbackPod/Classes/**/*"
+}

@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'KahunaFeedbackPod_Example' do
+  pod 'KahunaFeedbackPod', :path => '../'
+
+  target 'KahunaFeedbackPod_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

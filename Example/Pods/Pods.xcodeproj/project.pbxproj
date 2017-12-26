@@ -1,0 +1,803 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02A523ED6BD87513AD723759540C0BCC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		295078AD6F14D271368CD6217F601FAE /* Pods-KahunaFeedbackPod_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AAC098DB0A34AC2D3E32CEB213D021D /* Pods-KahunaFeedbackPod_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		716EE2A64630ED4680C29BD67FE4E43B /* Pods-KahunaFeedbackPod_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 26A3E2F280B992B974BE1BC8D77D4BBF /* Pods-KahunaFeedbackPod_Example-dummy.m */; };
+		83330B14917CCA3E2E6F04B300735D77 /* KahunaFeedbackPod-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 90A3D006DA977E820D93E22AABCFE836 /* KahunaFeedbackPod-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91AFF66630A2FEAEC793079488CF3CF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		A68C11811FF2C4EB00BB9CE4 /* FeedbackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68C116F1FF2C4EB00BB9CE4 /* FeedbackVC.swift */; };
+		A68C11821FF2C4EB00BB9CE4 /* ImageSliderSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68C11701FF2C4EB00BB9CE4 /* ImageSliderSwift.swift */; };
+		A68C11831FF2C4EB00BB9CE4 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68C11711FF2C4EB00BB9CE4 /* RatingControl.swift */; };
+		A68C11841FF2C4EB00BB9CE4 /* RBResizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68C11721FF2C4EB00BB9CE4 /* RBResizer.swift */; };
+		A68C11851FF2C4EB00BB9CE4 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = A68C11751FF2C4EB00BB9CE4 /* crypt.h */; };
+		A68C11861FF2C4EB00BB9CE4 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = A68C11761FF2C4EB00BB9CE4 /* ioapi.c */; };
+		A68C11871FF2C4EB00BB9CE4 /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = A68C11771FF2C4EB00BB9CE4 /* ioapi.h */; };
+		A68C11881FF2C4EB00BB9CE4 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = A68C11791FF2C4EB00BB9CE4 /* unzip.c */; };
+		A68C11891FF2C4EB00BB9CE4 /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = A68C117A1FF2C4EB00BB9CE4 /* unzip.h */; };
+		A68C118A1FF2C4EB00BB9CE4 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = A68C117B1FF2C4EB00BB9CE4 /* zip.c */; };
+		A68C118B1FF2C4EB00BB9CE4 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = A68C117C1FF2C4EB00BB9CE4 /* zip.h */; };
+		A68C118C1FF2C4EB00BB9CE4 /* QuickZip.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68C117D1FF2C4EB00BB9CE4 /* QuickZip.swift */; };
+		A68C118D1FF2C4EB00BB9CE4 /* Zip.h in Headers */ = {isa = PBXBuildFile; fileRef = A68C117E1FF2C4EB00BB9CE4 /* Zip.h */; };
+		A68C118E1FF2C4EB00BB9CE4 /* Zip.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68C117F1FF2C4EB00BB9CE4 /* Zip.swift */; };
+		A68C118F1FF2C4EB00BB9CE4 /* ZipUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68C11801FF2C4EB00BB9CE4 /* ZipUtilities.swift */; };
+		BD5408471B425543910FEF384E80C705 /* KahunaFeedbackPod-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A19A95AB9EDEEAA586EA2FED6276AFE /* KahunaFeedbackPod-dummy.m */; };
+		C6AAD0C691A8A17CEBFF5371A8CAD5BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		D95E5D683AE30E6A3C5478F2E2A739D0 /* Pods-KahunaFeedbackPod_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D15078AD578601CB5A36A3323D424C8 /* Pods-KahunaFeedbackPod_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F517423919DFBF403F858DD6CA9523E1 /* Pods-KahunaFeedbackPod_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B9A031C832DD86729FE04AE8DD096F /* Pods-KahunaFeedbackPod_Tests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0731D4F3F7D3B702656204EE4A1CE938 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3F3289B633E5E935378333D020572E6;
+			remoteInfo = KahunaFeedbackPod;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02CEC379D2032D5253E0EAC9465F08E9 /* Pods-KahunaFeedbackPod_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KahunaFeedbackPod_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		0858113F5F4AB1E25F9E1AAAA475C197 /* Pods-KahunaFeedbackPod_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KahunaFeedbackPod_Example-frameworks.sh"; sourceTree = "<group>"; };
+		0867337389912F6817407595543DDABC /* Pods-KahunaFeedbackPod_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KahunaFeedbackPod_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		1137E48242A26B23FE1124F00F2E2457 /* Pods-KahunaFeedbackPod_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KahunaFeedbackPod_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		21249C347F57C3DFB102743D87E312B1 /* Pods-KahunaFeedbackPod_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KahunaFeedbackPod_Example-resources.sh"; sourceTree = "<group>"; };
+		23E38E48E3EC71196F0692D6C7761B91 /* Pods-KahunaFeedbackPod_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-KahunaFeedbackPod_Example.modulemap"; sourceTree = "<group>"; };
+		26A3E2F280B992B974BE1BC8D77D4BBF /* Pods-KahunaFeedbackPod_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KahunaFeedbackPod_Example-dummy.m"; sourceTree = "<group>"; };
+		29D175D1B157F7224292991A25A531E9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D15078AD578601CB5A36A3323D424C8 /* Pods-KahunaFeedbackPod_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KahunaFeedbackPod_Tests-umbrella.h"; sourceTree = "<group>"; };
+		2DBB68668B5BBD23571DA7765A3C314B /* KahunaFeedbackPod-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KahunaFeedbackPod-prefix.pch"; sourceTree = "<group>"; };
+		3EA97933D428DF422243247A2FA88E03 /* Pods-KahunaFeedbackPod_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KahunaFeedbackPod_Example.release.xcconfig"; sourceTree = "<group>"; };
+		4746E41EFE65E79F5F1A3613D6E0E49F /* KahunaFeedbackPod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KahunaFeedbackPod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51B4C690BA507042DC6300EEBD979E7C /* KahunaFeedbackPod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KahunaFeedbackPod.xcconfig; sourceTree = "<group>"; };
+		61E5E1A794F5B52E4360F9CBB658B2D3 /* Pods-KahunaFeedbackPod_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KahunaFeedbackPod_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7531978BC68A43379CCC7056255AECF3 /* Pods-KahunaFeedbackPod_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KahunaFeedbackPod_Tests-resources.sh"; sourceTree = "<group>"; };
+		8AAC098DB0A34AC2D3E32CEB213D021D /* Pods-KahunaFeedbackPod_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KahunaFeedbackPod_Example-umbrella.h"; sourceTree = "<group>"; };
+		8D75AAF0411D57381D0B5EDAD1C773B0 /* KahunaFeedbackPod.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KahunaFeedbackPod.modulemap; sourceTree = "<group>"; };
+		90A3D006DA977E820D93E22AABCFE836 /* KahunaFeedbackPod-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KahunaFeedbackPod-umbrella.h"; sourceTree = "<group>"; };
+		915378A57896E407FABAFE400540EAFB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9A19A95AB9EDEEAA586EA2FED6276AFE /* KahunaFeedbackPod-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KahunaFeedbackPod-dummy.m"; sourceTree = "<group>"; };
+		A68C11661FF2C4EB00BB9CE4 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		A68C11671FF2C4EB00BB9CE4 /* Cross_Screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cross_Screen.png; sourceTree = "<group>"; };
+		A68C11681FF2C4EB00BB9CE4 /* FeedbackVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedbackVC.xib; sourceTree = "<group>"; };
+		A68C11691FF2C4EB00BB9CE4 /* img_addPhoto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_addPhoto.png; sourceTree = "<group>"; };
+		A68C116A1FF2C4EB00BB9CE4 /* img_starFilled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_starFilled.png; sourceTree = "<group>"; };
+		A68C116B1FF2C4EB00BB9CE4 /* img_starUnfilled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_starUnfilled.png; sourceTree = "<group>"; };
+		A68C116C1FF2C4EB00BB9CE4 /* NoImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NoImage.png; sourceTree = "<group>"; };
+		A68C116E1FF2C4EB00BB9CE4 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		A68C116F1FF2C4EB00BB9CE4 /* FeedbackVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackVC.swift; sourceTree = "<group>"; };
+		A68C11701FF2C4EB00BB9CE4 /* ImageSliderSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageSliderSwift.swift; sourceTree = "<group>"; };
+		A68C11711FF2C4EB00BB9CE4 /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
+		A68C11721FF2C4EB00BB9CE4 /* RBResizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBResizer.swift; sourceTree = "<group>"; };
+		A68C11751FF2C4EB00BB9CE4 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		A68C11761FF2C4EB00BB9CE4 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		A68C11771FF2C4EB00BB9CE4 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		A68C11781FF2C4EB00BB9CE4 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		A68C11791FF2C4EB00BB9CE4 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		A68C117A1FF2C4EB00BB9CE4 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		A68C117B1FF2C4EB00BB9CE4 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		A68C117C1FF2C4EB00BB9CE4 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		A68C117D1FF2C4EB00BB9CE4 /* QuickZip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickZip.swift; sourceTree = "<group>"; };
+		A68C117E1FF2C4EB00BB9CE4 /* Zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Zip.h; sourceTree = "<group>"; };
+		A68C117F1FF2C4EB00BB9CE4 /* Zip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Zip.swift; sourceTree = "<group>"; };
+		A68C11801FF2C4EB00BB9CE4 /* ZipUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipUtilities.swift; sourceTree = "<group>"; };
+		A8B9A031C832DD86729FE04AE8DD096F /* Pods-KahunaFeedbackPod_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KahunaFeedbackPod_Tests-dummy.m"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CC3406ED9E5955EDBF9B96B27BDD1177 /* Pods_KahunaFeedbackPod_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KahunaFeedbackPod_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D27B22C2EEE923A3C439F80F6A6ABCEC /* Pods-KahunaFeedbackPod_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-KahunaFeedbackPod_Tests.modulemap"; sourceTree = "<group>"; };
+		D5B3CFC8A3BA61ACB287EB8C888E7840 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E81A2A27DE1B3A842B8FD77CE12338B1 /* Pods-KahunaFeedbackPod_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KahunaFeedbackPod_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F468411AA4B79913732A4E618F7C78D7 /* Pods-KahunaFeedbackPod_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KahunaFeedbackPod_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F8A453FE2186EE61BB6F21AB4E308B2C /* Pods-KahunaFeedbackPod_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KahunaFeedbackPod_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		F8FA85B149E1A08CA187B6C8E2A087C5 /* Pods-KahunaFeedbackPod_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KahunaFeedbackPod_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		F984FAE73E78905885384008B04EF582 /* Pods_KahunaFeedbackPod_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KahunaFeedbackPod_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		340C2BBB028F36A57111AAF3E1695FDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91AFF66630A2FEAEC793079488CF3CF8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57CFE1C2A741E9006D8B3570BD7DCB4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02A523ED6BD87513AD723759540C0BCC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97DD99A78DBC81C1CE972D704C857388 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6AAD0C691A8A17CEBFF5371A8CAD5BC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		116B73C7E71BFE308F24A082F79D6346 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4746E41EFE65E79F5F1A3613D6E0E49F /* KahunaFeedbackPod.framework */,
+				F984FAE73E78905885384008B04EF582 /* Pods_KahunaFeedbackPod_Example.framework */,
+				CC3406ED9E5955EDBF9B96B27BDD1177 /* Pods_KahunaFeedbackPod_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3237727BAC907BED3CC38CFF279B8DB3 /* KahunaFeedbackPod */ = {
+			isa = PBXGroup;
+			children = (
+				A68C11651FF2C4EB00BB9CE4 /* Assets */,
+				A68C116D1FF2C4EB00BB9CE4 /* Classes */,
+			);
+			path = KahunaFeedbackPod;
+			sourceTree = "<group>";
+		};
+		4945250F9DEAF2993D9290A5E8BCBB89 /* KahunaFeedbackPod */ = {
+			isa = PBXGroup;
+			children = (
+				3237727BAC907BED3CC38CFF279B8DB3 /* KahunaFeedbackPod */,
+				B0F49897A54B252917093829B98C3070 /* Support Files */,
+			);
+			name = KahunaFeedbackPod;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		4EB1A70CC3F760949BC7909FD0C780CE /* Pods-KahunaFeedbackPod_Example */ = {
+			isa = PBXGroup;
+			children = (
+				915378A57896E407FABAFE400540EAFB /* Info.plist */,
+				23E38E48E3EC71196F0692D6C7761B91 /* Pods-KahunaFeedbackPod_Example.modulemap */,
+				F468411AA4B79913732A4E618F7C78D7 /* Pods-KahunaFeedbackPod_Example-acknowledgements.markdown */,
+				02CEC379D2032D5253E0EAC9465F08E9 /* Pods-KahunaFeedbackPod_Example-acknowledgements.plist */,
+				26A3E2F280B992B974BE1BC8D77D4BBF /* Pods-KahunaFeedbackPod_Example-dummy.m */,
+				0858113F5F4AB1E25F9E1AAAA475C197 /* Pods-KahunaFeedbackPod_Example-frameworks.sh */,
+				21249C347F57C3DFB102743D87E312B1 /* Pods-KahunaFeedbackPod_Example-resources.sh */,
+				8AAC098DB0A34AC2D3E32CEB213D021D /* Pods-KahunaFeedbackPod_Example-umbrella.h */,
+				1137E48242A26B23FE1124F00F2E2457 /* Pods-KahunaFeedbackPod_Example.debug.xcconfig */,
+				3EA97933D428DF422243247A2FA88E03 /* Pods-KahunaFeedbackPod_Example.release.xcconfig */,
+			);
+			name = "Pods-KahunaFeedbackPod_Example";
+			path = "Target Support Files/Pods-KahunaFeedbackPod_Example";
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				C1A87F30847A6CDE4A68C96DC6741963 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				116B73C7E71BFE308F24A082F79D6346 /* Products */,
+				F2173470E37A9F47C9A844372240F56F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9054D5DC1F40A8E48A2D509698EBF570 /* Pods-KahunaFeedbackPod_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				29D175D1B157F7224292991A25A531E9 /* Info.plist */,
+				D27B22C2EEE923A3C439F80F6A6ABCEC /* Pods-KahunaFeedbackPod_Tests.modulemap */,
+				E81A2A27DE1B3A842B8FD77CE12338B1 /* Pods-KahunaFeedbackPod_Tests-acknowledgements.markdown */,
+				61E5E1A794F5B52E4360F9CBB658B2D3 /* Pods-KahunaFeedbackPod_Tests-acknowledgements.plist */,
+				A8B9A031C832DD86729FE04AE8DD096F /* Pods-KahunaFeedbackPod_Tests-dummy.m */,
+				F8A453FE2186EE61BB6F21AB4E308B2C /* Pods-KahunaFeedbackPod_Tests-frameworks.sh */,
+				7531978BC68A43379CCC7056255AECF3 /* Pods-KahunaFeedbackPod_Tests-resources.sh */,
+				2D15078AD578601CB5A36A3323D424C8 /* Pods-KahunaFeedbackPod_Tests-umbrella.h */,
+				F8FA85B149E1A08CA187B6C8E2A087C5 /* Pods-KahunaFeedbackPod_Tests.debug.xcconfig */,
+				0867337389912F6817407595543DDABC /* Pods-KahunaFeedbackPod_Tests.release.xcconfig */,
+			);
+			name = "Pods-KahunaFeedbackPod_Tests";
+			path = "Target Support Files/Pods-KahunaFeedbackPod_Tests";
+			sourceTree = "<group>";
+		};
+		A68C11651FF2C4EB00BB9CE4 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				A68C11661FF2C4EB00BB9CE4 /* .gitkeep */,
+				A68C11671FF2C4EB00BB9CE4 /* Cross_Screen.png */,
+				A68C11681FF2C4EB00BB9CE4 /* FeedbackVC.xib */,
+				A68C11691FF2C4EB00BB9CE4 /* img_addPhoto.png */,
+				A68C116A1FF2C4EB00BB9CE4 /* img_starFilled.png */,
+				A68C116B1FF2C4EB00BB9CE4 /* img_starUnfilled.png */,
+				A68C116C1FF2C4EB00BB9CE4 /* NoImage.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		A68C116D1FF2C4EB00BB9CE4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A68C116E1FF2C4EB00BB9CE4 /* .gitkeep */,
+				A68C116F1FF2C4EB00BB9CE4 /* FeedbackVC.swift */,
+				A68C11701FF2C4EB00BB9CE4 /* ImageSliderSwift.swift */,
+				A68C11711FF2C4EB00BB9CE4 /* RatingControl.swift */,
+				A68C11721FF2C4EB00BB9CE4 /* RBResizer.swift */,
+				A68C11731FF2C4EB00BB9CE4 /* Zip */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A68C11731FF2C4EB00BB9CE4 /* Zip */ = {
+			isa = PBXGroup;
+			children = (
+				A68C11741FF2C4EB00BB9CE4 /* minizip */,
+				A68C117D1FF2C4EB00BB9CE4 /* QuickZip.swift */,
+				A68C117E1FF2C4EB00BB9CE4 /* Zip.h */,
+				A68C117F1FF2C4EB00BB9CE4 /* Zip.swift */,
+				A68C11801FF2C4EB00BB9CE4 /* ZipUtilities.swift */,
+			);
+			path = Zip;
+			sourceTree = "<group>";
+		};
+		A68C11741FF2C4EB00BB9CE4 /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				A68C11751FF2C4EB00BB9CE4 /* crypt.h */,
+				A68C11761FF2C4EB00BB9CE4 /* ioapi.c */,
+				A68C11771FF2C4EB00BB9CE4 /* ioapi.h */,
+				A68C11781FF2C4EB00BB9CE4 /* module.modulemap */,
+				A68C11791FF2C4EB00BB9CE4 /* unzip.c */,
+				A68C117A1FF2C4EB00BB9CE4 /* unzip.h */,
+				A68C117B1FF2C4EB00BB9CE4 /* zip.c */,
+				A68C117C1FF2C4EB00BB9CE4 /* zip.h */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
+		B0F49897A54B252917093829B98C3070 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D5B3CFC8A3BA61ACB287EB8C888E7840 /* Info.plist */,
+				8D75AAF0411D57381D0B5EDAD1C773B0 /* KahunaFeedbackPod.modulemap */,
+				51B4C690BA507042DC6300EEBD979E7C /* KahunaFeedbackPod.xcconfig */,
+				9A19A95AB9EDEEAA586EA2FED6276AFE /* KahunaFeedbackPod-dummy.m */,
+				2DBB68668B5BBD23571DA7765A3C314B /* KahunaFeedbackPod-prefix.pch */,
+				90A3D006DA977E820D93E22AABCFE836 /* KahunaFeedbackPod-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/KahunaFeedbackPod";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C1A87F30847A6CDE4A68C96DC6741963 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4945250F9DEAF2993D9290A5E8BCBB89 /* KahunaFeedbackPod */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		F2173470E37A9F47C9A844372240F56F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4EB1A70CC3F760949BC7909FD0C780CE /* Pods-KahunaFeedbackPod_Example */,
+				9054D5DC1F40A8E48A2D509698EBF570 /* Pods-KahunaFeedbackPod_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4CD543DA1C04E1C140622480443623D2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D95E5D683AE30E6A3C5478F2E2A739D0 /* Pods-KahunaFeedbackPod_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1A54FDBEB2484C997C5355AF9EE37B0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				295078AD6F14D271368CD6217F601FAE /* Pods-KahunaFeedbackPod_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE5D0969F8DA5F15E916BC95779C4295 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A68C118D1FF2C4EB00BB9CE4 /* Zip.h in Headers */,
+				A68C11871FF2C4EB00BB9CE4 /* ioapi.h in Headers */,
+				83330B14917CCA3E2E6F04B300735D77 /* KahunaFeedbackPod-umbrella.h in Headers */,
+				A68C11851FF2C4EB00BB9CE4 /* crypt.h in Headers */,
+				A68C118B1FF2C4EB00BB9CE4 /* zip.h in Headers */,
+				A68C11891FF2C4EB00BB9CE4 /* unzip.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		14A5188B029815BFAA0270F20368FBEC /* Pods-KahunaFeedbackPod_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF64061759F45DFE35BF96A01E0AF6BE /* Build configuration list for PBXNativeTarget "Pods-KahunaFeedbackPod_Tests" */;
+			buildPhases = (
+				2B0A506AB63A31A2FF54D7A8475BEAD3 /* Sources */,
+				340C2BBB028F36A57111AAF3E1695FDC /* Frameworks */,
+				4CD543DA1C04E1C140622480443623D2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-KahunaFeedbackPod_Tests";
+			productName = "Pods-KahunaFeedbackPod_Tests";
+			productReference = CC3406ED9E5955EDBF9B96B27BDD1177 /* Pods_KahunaFeedbackPod_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		56EFAC64D86F95D04C639017EE50213C /* Pods-KahunaFeedbackPod_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EEC149601E1A7C2816B2B6B9C28C1E1 /* Build configuration list for PBXNativeTarget "Pods-KahunaFeedbackPod_Example" */;
+			buildPhases = (
+				4D4B89F9055B60E612B447AE22E5B681 /* Sources */,
+				57CFE1C2A741E9006D8B3570BD7DCB4D /* Frameworks */,
+				D1A54FDBEB2484C997C5355AF9EE37B0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				419A32CF2E5E4489A77C2A374BC8FDE7 /* PBXTargetDependency */,
+			);
+			name = "Pods-KahunaFeedbackPod_Example";
+			productName = "Pods-KahunaFeedbackPod_Example";
+			productReference = F984FAE73E78905885384008B04EF582 /* Pods_KahunaFeedbackPod_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C3F3289B633E5E935378333D020572E6 /* KahunaFeedbackPod */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F56DB62E3EF6E4A9E4808B652E6F546F /* Build configuration list for PBXNativeTarget "KahunaFeedbackPod" */;
+			buildPhases = (
+				359362D6216FF8A68E98E155132A95B4 /* Sources */,
+				97DD99A78DBC81C1CE972D704C857388 /* Frameworks */,
+				DE5D0969F8DA5F15E916BC95779C4295 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KahunaFeedbackPod;
+			productName = KahunaFeedbackPod;
+			productReference = 4746E41EFE65E79F5F1A3613D6E0E49F /* KahunaFeedbackPod.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 116B73C7E71BFE308F24A082F79D6346 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3F3289B633E5E935378333D020572E6 /* KahunaFeedbackPod */,
+				56EFAC64D86F95D04C639017EE50213C /* Pods-KahunaFeedbackPod_Example */,
+				14A5188B029815BFAA0270F20368FBEC /* Pods-KahunaFeedbackPod_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B0A506AB63A31A2FF54D7A8475BEAD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F517423919DFBF403F858DD6CA9523E1 /* Pods-KahunaFeedbackPod_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		359362D6216FF8A68E98E155132A95B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A68C11861FF2C4EB00BB9CE4 /* ioapi.c in Sources */,
+				A68C118A1FF2C4EB00BB9CE4 /* zip.c in Sources */,
+				A68C118F1FF2C4EB00BB9CE4 /* ZipUtilities.swift in Sources */,
+				A68C11881FF2C4EB00BB9CE4 /* unzip.c in Sources */,
+				A68C118E1FF2C4EB00BB9CE4 /* Zip.swift in Sources */,
+				A68C11831FF2C4EB00BB9CE4 /* RatingControl.swift in Sources */,
+				BD5408471B425543910FEF384E80C705 /* KahunaFeedbackPod-dummy.m in Sources */,
+				A68C11821FF2C4EB00BB9CE4 /* ImageSliderSwift.swift in Sources */,
+				A68C118C1FF2C4EB00BB9CE4 /* QuickZip.swift in Sources */,
+				A68C11811FF2C4EB00BB9CE4 /* FeedbackVC.swift in Sources */,
+				A68C11841FF2C4EB00BB9CE4 /* RBResizer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D4B89F9055B60E612B447AE22E5B681 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				716EE2A64630ED4680C29BD67FE4E43B /* Pods-KahunaFeedbackPod_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		419A32CF2E5E4489A77C2A374BC8FDE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KahunaFeedbackPod;
+			target = C3F3289B633E5E935378333D020572E6 /* KahunaFeedbackPod */;
+			targetProxy = 0731D4F3F7D3B702656204EE4A1CE938 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		13E96A645A77DAD1FD4F541F18F5DDBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		2CAC1B45BDCD0E29D3D3D01BE348545A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8FA85B149E1A08CA187B6C8E2A087C5 /* Pods-KahunaFeedbackPod_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-KahunaFeedbackPod_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KahunaFeedbackPod_Tests/Pods-KahunaFeedbackPod_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_KahunaFeedbackPod_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		569D42C1B9FA92CC108E6118B2CC061B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51B4C690BA507042DC6300EEBD979E7C /* KahunaFeedbackPod.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KahunaFeedbackPod/KahunaFeedbackPod-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KahunaFeedbackPod/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KahunaFeedbackPod/KahunaFeedbackPod.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = KahunaFeedbackPod;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		862AF3139CD84E18D34FAF2F43CD0DA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8F3AFFB0E20A1AD61DF18CB5CBBFECA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0867337389912F6817407595543DDABC /* Pods-KahunaFeedbackPod_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-KahunaFeedbackPod_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KahunaFeedbackPod_Tests/Pods-KahunaFeedbackPod_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_KahunaFeedbackPod_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		98E924BFA662CB03034EADA0038EE1B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1137E48242A26B23FE1124F00F2E2457 /* Pods-KahunaFeedbackPod_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-KahunaFeedbackPod_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KahunaFeedbackPod_Example/Pods-KahunaFeedbackPod_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_KahunaFeedbackPod_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9F331BA12134EB7B8DB0597E6B8951C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51B4C690BA507042DC6300EEBD979E7C /* KahunaFeedbackPod.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KahunaFeedbackPod/KahunaFeedbackPod-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KahunaFeedbackPod/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KahunaFeedbackPod/KahunaFeedbackPod.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = KahunaFeedbackPod;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C5E69F1BCE1D60AC843821EFDFF52F37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EA97933D428DF422243247A2FA88E03 /* Pods-KahunaFeedbackPod_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-KahunaFeedbackPod_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KahunaFeedbackPod_Example/Pods-KahunaFeedbackPod_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_KahunaFeedbackPod_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13E96A645A77DAD1FD4F541F18F5DDBF /* Debug */,
+				862AF3139CD84E18D34FAF2F43CD0DA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EEC149601E1A7C2816B2B6B9C28C1E1 /* Build configuration list for PBXNativeTarget "Pods-KahunaFeedbackPod_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98E924BFA662CB03034EADA0038EE1B2 /* Debug */,
+				C5E69F1BCE1D60AC843821EFDFF52F37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF64061759F45DFE35BF96A01E0AF6BE /* Build configuration list for PBXNativeTarget "Pods-KahunaFeedbackPod_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CAC1B45BDCD0E29D3D3D01BE348545A /* Debug */,
+				8F3AFFB0E20A1AD61DF18CB5CBBFECA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F56DB62E3EF6E4A9E4808B652E6F546F /* Build configuration list for PBXNativeTarget "KahunaFeedbackPod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				569D42C1B9FA92CC108E6118B2CC061B /* Debug */,
+				9F331BA12134EB7B8DB0597E6B8951C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
