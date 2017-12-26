@@ -37,7 +37,7 @@ DESC
    }
 
 s.libraries = 'z'
-s.public_header_files = 'KahunaFeedbackPod/Zip/*.h'
+s.public_header_files = 'KahunaFeedbackPod/Classes/Zip/*.h'
 
 s.pod_target_xcconfig = {'SWIFT_INCLUDE_PATHS' => '$(SRCROOT)/KahunaFeedbackPod/KahunaFeedbackPod/Classes/Zip/minizip/**','LIBRARY_SEARCH_PATHS' => '$(SRCROOT)/KahunaFeedbackPod/KahunaFeedbackPod/'}
 
